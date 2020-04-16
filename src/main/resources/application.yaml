@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/yh?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
+
+mybatis:
+  type-aliases-package: com.yh.pojo
+  mapper-locations: classpath:mapper/*Mapper.xml
